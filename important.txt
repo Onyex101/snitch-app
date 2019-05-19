@@ -1,0 +1,10 @@
+https://www.joshmorony.com/advanced-forms-validation-in-ionic-2/
+
+https://ionicthemes.com/tutorials/about/building-a-ionic-firebase-app-step-by-step
+
+https://ionicthemes.com/tutorials/about/firebase-authentication-in-ionic-framework-apps
+
+https://medium.com/sourcebytes/how-to-build-a-responsive-login-form-using-ionic-4-7a74b776884d
+
+https://ionicthemes.com/tutorials/about/forms-and-validation-in-ionic
+

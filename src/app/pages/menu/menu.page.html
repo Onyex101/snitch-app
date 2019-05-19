@@ -1,0 +1,35 @@
+<ion-split-pane>
+  <ion-menu contentId="content">
+
+    <ion-header translucent>
+      <ion-toolbar color="dark">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content fullscreen="true">
+      <div class="content ">
+        <ion-list lines="none" class="transparent">
+          <ion-list-header class="transparent">
+            <ion-label color="light">Page List</ion-label>
+          </ion-list-header>
+          <div class="scrollContent transparent list-bottom-shadow">
+            <ion-menu-toggle auto-hide="false">
+              <ion-item class="transparent" *ngFor="let p of pages">
+                <ion-icon [name]="p.icon" color="light" slot="start"></ion-icon>
+                <ion-label (click)="pageRedirect(p)" color="light">{{p.title}}</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </div>
+          <ion-item class="transparent">
+            <ion-icon name="log-out" color="light" slot="start"></ion-icon>
+            <ion-label (click)="logout()" color="light">Log out</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-content>
+
+  </ion-menu>
+
+  <ion-router-outlet id="content" main></ion-router-outlet>
+</ion-split-pane>

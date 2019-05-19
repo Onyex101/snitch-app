@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light">view</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="contentBg">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Pull to refresh" refreshingSpinner="circles">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-card *ngFor="let report of reports">
+    <ion-card-content class="title">
+      {{report.description}}
+    </ion-card-content>
+    <ion-card-subtitle class="subtitle">
+      Status: {{report.status.toUpperCase()}}
+    </ion-card-subtitle>
+  </ion-card>
+</ion-content>

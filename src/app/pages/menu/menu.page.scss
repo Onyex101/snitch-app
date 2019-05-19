@@ -1,0 +1,29 @@
+// .active-item {
+//     border-left: 8px solid var(--ion-color-primary);
+// }
+.scrollContent{
+    max-height: 200px;
+    overflow: scroll;
+}
+.transparent{
+    --background: rgba(0,0,0,0);
+    background: rgba(0,0,0,0);
+}
+ion-content {
+    --background: url('../../../assets/images/sidemenu1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+};
+// .content{
+//     height: 100%;
+//     width: 100%;
+//     background-image: url('../assets/images/sidemenu1.jpg');
+//     background-size: cover;
+//     background-position: center;
+// }
+.list-bottom-shadow{
+    box-shadow: 0 -6px 10px inset rgba(0,0,0,0.3);
+}
+.notes{
+    font-size: 14px;
+}
